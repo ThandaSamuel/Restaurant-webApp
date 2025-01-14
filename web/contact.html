@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Thanda Samuel">
+<title>Thanda's Food & Drinks</title>
+<style>
+
+  body {  background-image: url("images/contactBackground.jpg");
+          background-size: cover;
+          margin: 0;
+          padding: 0;
+          }
+
+  header {
+   text-align: center;
+   margin:10px;
+   padding: 50px;}
+
+ footer{
+  background-color: #33FFBD;
+  margin-top:  50px;
+  margin: 0px;
+  padding: 20px;
+}
+
+ header > figure {
+ float: left;
+}
+ 
+  a {
+   text-decoration:none;
+}
+  
+ .comment-form {
+  left: 200px;
+  text-align: center;
+   }
+  
+ .view-feedback {
+  left: 200px;
+  text-align: center;
+
+}
+  h1, h2, label {
+   color: white;
+}
+
+ h1{
+ font-family: Papyrus, fantasy;
+ font-size: 30px;}
+
+ #mail-to {
+ position: absolute;
+ right: 100px;
+ }
+
+</style>
+<script>
+function addComment(form){
+
+ var newComment;
+ var allComments;
+ var name;
+ var addedText;
+
+ newComment= form.elements["newComment"];
+ allComments= form.elements["allComments"];
+ name = form.elements["name"];
+email = form.elements["email"];
+
+if (!form.checkValidity()) {
+alert("Please type your name, correct email format, and comment!");
+newComment.value="";
+name.value="";
+email.value="";
+return false;
+}
+
+if (allComments.value=="")
+{
+ addedText = name.value + " says : \n" + newComment.value;
+}
+else {
+ addedText = name.value+ " says :" + "\n" + newComment.value + "\n\n";
+}
+
+allComments.value = addedText + allComments.value; 
+newComment.value="";
+name.value="";
+email.value="";
+
+}
+
+</script>
+</head>
+<body>
+<header id="main">
+  <figure>
+    <img src="images/logo.jpg" alt="logo" width="120" height="130">
+  </figure>
+    <div> 
+     <h1> THANDA'S FOODS & DRINKS</h1>
+      <a href="location.html"> LOCATIONS &nbsp; &nbsp; &nbsp; &nbsp; </a> 
+      <a href="index.html"> HOME &nbsp; &nbsp; &nbsp; &nbsp;</a>
+      <a href="menu.html"> MENU &nbsp; &nbsp; &nbsp; &nbsp;</a>
+      <a href="contact.html"> CONTACT &nbsp; &nbsp; &nbsp; &nbsp;</a>
+    </div> 
+</header>
+   <h1 >  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CONTACT </h1>
+<div class="comment-form">
+<form>
+   <br><br>
+   <h2> Write us and drop a feedback.</h2>
+   <br><br><br>
+  
+      
+    <input type="email" id="email" placeholder="email" size="30" required autofocus>&nbsp; &nbsp; &nbsp; &nbsp;
+    <input type="text" id="name" placeholder="name" size="30" required><br><br>
+    <label for="newComment">Your comment:</label><br><br>
+    <textarea id="newComment" rows="10" cols="100"  placeholder="Your comment"
+     required spellcheck="true">
+    </textarea> <br><br>
+    <input type="button" value="Submit" onclick="addComment(this.form);">
+    <br><br>
+    <label for="allComments"> View Feedbacks </label><br><br>
+    <textarea id="allComments" rows="30" cols="100" ></textarea>
+    
+</form>
+
+<p></p>
+</div>
+<footer>
+ <div id="mail-to">
+ <a href="mailto:thanda.samuel@yahoo.com">Send email</a>
+ </div>
+  <span><b>Visit Us</b><br>
+     345 North Street,<br>
+     Saint Paul, MN <br>
+     +763-998-8888
+    </span>
+   <div><small> &copy; All rights reserved.</small></div>
+  </footer>
+</body>
+
+ 
+</html>

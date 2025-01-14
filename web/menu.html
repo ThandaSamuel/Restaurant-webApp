@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Thanda Samuel">
+    <title>Thanda's Food & Drinks</title>
+    <style>
+
+        body {
+            background-color: gray;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            margin: 50px;
+            padding: 50px;
+        }
+
+        footer {
+            background-color: #33FFBD;
+            margin: 0px;
+            padding: 20px;
+        }
+
+        h1, h2, .text {
+            color: white;
+        }
+
+       h1{
+         font-family: Papyrus, fantasy;
+         font-size: 30px;}
+
+
+        header > figure {
+            float: left;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #menu {
+              position: relative;
+              left: 800px;
+              top: -50px;
+              
+        }
+
+        .table {
+            display: table;
+            border-spacing: 50px;
+            left: 200px;
+            margin-left: 150px;
+        }
+
+        .row {
+            display: table-row;
+        }
+
+            .row > * {
+                display: table-cell;
+                text-align: center;
+            }
+
+       #mail-to {
+ 	position: absolute;
+ 	right: 100px;
+ 	}
+    </style>
+</head>
+<body>
+    <header id="main">
+        <figure>
+            <img src="images/logo.jpg" alt="logo" width="120" height="130">
+        </figure>
+        <div>
+            <h1>THANDA'S FOODS & DRINKS</h1>
+            <a href="location.html"> LOCATIONS &nbsp; &nbsp; &nbsp; &nbsp; </a>
+            <a href="index.html"> HOME &nbsp; &nbsp; &nbsp; &nbsp;</a>
+            <a href="menu.html"> MENU &nbsp; &nbsp; &nbsp; &nbsp;</a>
+            <a href="contact.html"> CONTACT &nbsp; &nbsp; &nbsp; &nbsp;</a>
+        </div>
+    </header>
+    <h1>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; MENU</h1>
+    <span id="menu">
+        <a href="#all-dishes"> ALL DISHES &nbsp; &nbsp; &nbsp; &nbsp;</a>
+        <a href="#desserts">DESSERTS &nbsp; &nbsp; &nbsp; &nbsp;</a>
+        <a href="#drinks">DRINKS &nbsp; &nbsp; &nbsp; &nbsp;</a>
+    </span>
+    <div class="table" id="all-dishes">
+        <div class="row">
+            <span><img src="images/pizza.jpg" alt="Pizza" width="500" height="500"></span>
+            <span><img src="images/taco.jpg" alt="Taco" width="500" height="500"></span>
+        </div>
+        <div class="row">
+            <span class="text"> Big pizza of your choice  15.99 </span>
+            <span class="text"> Fish Tacos 8.99 </span>
+        </div>
+        <div class="row">
+            <span><img src="images/burger.jpg" alt="Burger" width="500" height="500"></span>
+            <span><img src="images/salad.jpg" alt="Salad" width="500" height="500"></span>
+        </div>
+        <div class="row">
+            <span class="text"> Burger with fries 8.99 </span>
+            <span class="text"> Summer salad 5.99 </span>
+        </div>
+    </div>
+    <div class="table" id="desserts">
+        <div class="row">
+            <span><img src="images/apple-pie.jpg" alt="Apple Pie" width="500" height="500"></span>
+            <span><img src="images/icecream.jpg" alt="Icecream" width="500" height="500"></span>
+        </div>
+        <div class="row">
+            <span class="text"> Chef's Apple Pie 6.99 </span>
+            <span class="text"> Signature Icecream with fruits 4.99 </span>
+        </div>
+    </div>
+
+ <div class="table" id="drinks">
+        <div class="row">
+            <span><img src="images/cocktail.jpg" alt="Cocktail" width="500" height="500"></span>
+            <span><img src="images/wine.jpg" alt="Wine" width="500" height="500"></span>
+        </div>
+        <div class="row">
+            <span class="text"> Signature cocktail 4.99 </span>
+            <span class="text"> Wine of choice 5.99 </span>
+        </div>
+    </div>
+
+    <footer>
+     <div id="mail-to">
+            <a href="mailto:thanda.samuel@yahoo.com">Send email</a>
+     </div>
+     <div>
+        <b>Visit Us</b><br>
+          345 North Street,<br>
+          Saint Paul, MN <br>
+         +763-998-8888
+     </div>
+        <div><small> &copy; All rights reserved.</small></div>
+  </footer>
+</body>
+</html>
