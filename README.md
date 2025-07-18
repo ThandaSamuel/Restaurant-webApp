@@ -1,7 +1,10 @@
 Introduction - The website allows customers to see information about the restaurant, menus, leave feedback,
 and the restaurant's locations. All the web pages have navigation by clicking the tag in the header.
+
 Technology   - HTML, CSS, and JavaScript
+
 Design the layout of the website
+
 (1) Home page includes
 - Navigation bar to Home, Locations, Menu, and Contact (Header)
 - Picture and quote for an attractive look using a div container
